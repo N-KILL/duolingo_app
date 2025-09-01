@@ -7,8 +7,6 @@ BoxDecoration baseDecoration({required Color color}) {
       BoxShadow(
         color: color,
         offset: Offset(0, 4),
-        blurRadius: 0,
-        spreadRadius: 0,
       ),
     ],
     borderRadius: BorderRadius.circular(16),

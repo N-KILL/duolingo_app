@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:duolingo_app/src/commons_widgets/app_button.dart';
 import 'package:duolingo_app/src/commons_widgets/app_section_header.dart';
 import 'package:duolingo_app/src/core/theme/app_theme_data.dart';
-import 'package:duolingo_app/src/features/home/controllers/home_state.dart';
+// import 'package:duolingo_app/src/features/home/controllers/home_state.dart';
 import 'package:duolingo_app/src/features/home/widgets/home_header.dart';
 import 'package:duolingo_app/src/features/home/widgets/home_icon_button.dart';
 import 'package:duolingo_app/src/utils/icon_type.dart';
@@ -14,14 +14,12 @@ class HomeView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
-    final homeState = ref.watch(homeStateProvider);
+    // final homeState = ref.watch(homeStateProvider);
 
     return Column(
       children: [
         SizedBox(height: 50),
         HomeHeader(
-          flag: homeState.selectedLanguage.flag,
           // TODO(any): Replace with actual level logic or data source.
           level: '1',
         ),

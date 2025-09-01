@@ -1,14 +1,9 @@
-import 'package:flutter/widgets.dart';
-
-import 'package:duolingo_app/src/utils/use_flags_emoji.dart';
+import 'package:flutter/material.dart';
 
 /// Widget to display the user's flag and level
 /// This widget shows the flag emoji of the selected language and the user's level.
 class UserFlagAndLevel extends StatelessWidget {
-  const UserFlagAndLevel({super.key, required this.flag, required this.level});
-
-  // Flag emoji representing the user's selected language
-  final String flag;
+  const UserFlagAndLevel({super.key, required this.level});
 
   // User level on this language
   final String level;
@@ -19,7 +14,7 @@ class UserFlagAndLevel extends StatelessWidget {
       width: 50,
       child: Row(
         children: [
-          Text(getFlagEmoji(flag), style: TextStyle(fontSize: 20)),
+          Image.asset('assets/flags/usa_flag.png', width: 25, height: 25),
           Spacer(),
           Text(level, style: TextStyle(fontSize: 20)),
         ],

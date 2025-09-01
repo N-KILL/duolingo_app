@@ -11,7 +11,7 @@ final ThemeData lightTheme = ThemeData(
 
   scaffoldBackgroundColor: AppColor.white,
 
-  cardTheme: CardTheme(
+  cardTheme: CardThemeData(
     color: AppColor.white,
     shadowColor: Colors.black.withAlpha(100),
     elevation: 16,

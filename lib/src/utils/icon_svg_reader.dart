@@ -1,8 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-// TODO(Nacho): Check if we need to use svg storage or local svg
- 
 /// Utility function to create an SVG icon widget from assets.
 /// Use this in your AppIconButton or anywhere you need an SVG icon.
 Widget svgIcon(
@@ -17,7 +15,8 @@ Widget svgIcon(
     key: key,
     width: size,
     height: size,
-    colorFilter: color != null ? ColorFilter.mode(color, BlendMode.srcIn) : null,
+    colorFilter:
+        color != null ? ColorFilter.mode(color, BlendMode.srcIn) : null,
     fit: fit,
   );
 }
@@ -35,7 +34,8 @@ Widget svgIconFromUrl(
     key: key,
     width: size,
     height: size,
-    colorFilter: color != null ? ColorFilter.mode(color, BlendMode.srcIn) : null,
+    colorFilter:
+        color != null ? ColorFilter.mode(color, BlendMode.srcIn) : null,
     fit: fit,
   );
 }

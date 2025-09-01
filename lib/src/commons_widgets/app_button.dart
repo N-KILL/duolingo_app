@@ -10,11 +10,13 @@ class AppButton extends StatelessWidget {
     required this.buttonText,
     required this.onPressed,
     required this.buttonColor,
+    this.isEnabled = true,
   });
 
   final String buttonText;
   final VoidCallback onPressed;
   final AppPalette buttonColor;
+  final bool isEnabled;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class AppButton extends StatelessWidget {
         color: AppColor.paletteColors[buttonColor]![0],
       ),
       child: ElevatedButton(
-        onPressed: onPressed,
+        onPressed: isEnabled ? onPressed : null,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColor.paletteColors[buttonColor]![1],
           elevation: 0,
